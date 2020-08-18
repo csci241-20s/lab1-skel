@@ -20,6 +20,13 @@ repositories {
     jcenter()
 }
 
+test {
+	testLogging {
+		showStandardStreams = true
+		exceptionFormat 'full'
+	}
+}
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     implementation 'com.google.guava:guava:26.0-jre'
